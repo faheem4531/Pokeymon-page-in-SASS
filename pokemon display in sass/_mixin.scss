@@ -1,0 +1,74 @@
+@mixin space {
+    margin: 0;
+    padding: 0; 
+}
+@mixin width($width,$height) {
+    
+    width: $width;
+    height: $height;
+}
+@mixin padding {
+    padding:0 120px; 
+}
+@mixin top-bottom($pt,$pb) {                  //padding top bottom
+    padding: $pt;
+    padding-bottom: $pb;
+    
+}
+@mixin login{                               //1
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -15px;
+}
+@mixin button {                              //2
+    width: 80px;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: $btn-clr;
+    color: $color;
+    letter-spacing: 2px;
+}
+@mixin row1-head {                                //3
+    display: flex;
+    align-items: center;
+    background: $gradient;
+    color: $color;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+} 
+@mixin eye {                                      //4
+    position: absolute;
+    top:20px;
+    right: 0;    
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    
+}
+@mixin card-bottom {                                    //5
+    font-size: 13px;
+    padding-top: 8px;
+    letter-spacing: 2px;
+}
+@mixin hr {
+    border:0 0 -1px  0 ;
+    border-bottom:-1px solid $color;
+    width: 300px;
+    height:0px;
+}
+
+@mixin footer {
+    background-color: $nav-foot;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+
+    
+}
+
+
